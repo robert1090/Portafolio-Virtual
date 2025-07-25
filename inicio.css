@@ -1,0 +1,130 @@
+body{
+    background-color: #000000;
+}
+
+.navbar{
+    width: 99%;
+    height: 60px;
+    background-color: #420000;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.logo{
+    color: #ffffff;
+    text-shadow: #ff0000 0px 0px 2px;
+}
+
+.logo span{
+    color: #ff0000;
+    text-shadow: #ffffff 0px 0px 2px;
+}
+
+.menu{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.menu a{
+    border-radius: 10px;
+    color : #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    border-radius: 10px;
+    color: #420000;
+    background-color: #970000;
+    transition: ease-in-out 0.6s;
+}
+
+.formulario{
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 99.5%;
+    height: 600px;
+    color : #ffffff;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+}
+
+.formulario h1{
+    flex: 1;
+    color: #7c7c7c;
+    padding-top: 60px;
+    padding-left: 80px;
+    text-decoration: underline #700000;
+}
+
+.formulario h3{
+    flex: 1;
+    padding-left: 80px;
+    padding-top: 10x;
+    color: #7c7c7c;
+    width: 600px;
+    white-space: pre-wrap;
+}
+
+.formulario img.perfil {
+    position: absolute;
+    width: 500px;
+    right: 200px;
+    top: 150px;
+}
+
+.redes {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    vertical-align: middle;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.redestitulo h1 {
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 80px;
+    color: #7c7c7c;
+    text-decoration: underline #700000;
+}
+
+.redes button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-color: red;
+    background-color: #420000;
+    color: #ffffff;
+    text-decoration: underline #ff0000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.redes button:hover {
+    color: #420000;
+    background-color: #970000;
+    transition: ease-in-out 0.6s;
+    border-color: #bbbbbb;
+    text-decoration: underline #ffffff;
+    border-radius: 50%;
+}
+
+.redes button img {
+    width: 20px;
+    height: 20px;
+}
+
+.redes button h3 {
+    color: #000000;
+}
