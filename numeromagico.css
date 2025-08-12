@@ -23,9 +23,10 @@ body {
     text-shadow: #ffffff 0px 0px 2px;
 }
 
-.menu {
+.menu{
     display: flex;
     width: 30%;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     align-items: center;
@@ -49,8 +50,10 @@ body {
     margin-top: 20px;
     margin-left: 5px;
     width: 99.5%;
-    height: 600px;
-    color: #ffffff;
+    min-height: 600px;
+    height: auto;
+    padding-bottom: 40px;
+    color : #ffffff;
     background-color: rgb(24, 23, 23);
     border-radius: 10px;
 }
@@ -74,6 +77,11 @@ body {
 }
 
 input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
     padding: 5px;
     font-size: 16px;
     width: 200px;
@@ -87,4 +95,37 @@ button {
 
 p {
     font-size: 18px;
+}
+
+.adivinar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 90px;
+    border: 2px solid red;
+    background-color: #420000;
+    color: #ffffff;
+    text-decoration: underline #ff0000;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.adivinar:hover {
+    color: #420000;
+    background-color: #970000;
+    transition: ease-in-out 0.6s;
+    border-color: #bbbbbb;
+    text-decoration: underline #ffffff;
+    border-radius: 10px;
+}
+
+.input-boton {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 10px;               
+    margin-top: 20px;
 }

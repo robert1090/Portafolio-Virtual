@@ -9,7 +9,7 @@ function iniciarJuego() {
     document.getElementById("mensaje2").textContent = "¡Buena suerte!";
     document.getElementById("intentosRestantes").textContent = `Intentos restantes: ${intentosMaximos}`;
     document.getElementById("numeroInput").disabled = false;
-    document.getElementById("botonAdivinar").textContent = "Intentar";
+    document.getElementById("botonAdivinar").textContent = "Adivinar";
 }
 
 function verificarNumero() {

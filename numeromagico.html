@@ -7,6 +7,7 @@
     <title>El Numero Magico</title>
     <link rel="stylesheet" href="numeromagico.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
@@ -24,8 +25,10 @@
         <p id="mensaje">Tienes 10 intentos para adivinar un número entre 1 y 100.</p>
         <p id="mensaje2"></p>
 
-        <input type="number" id="numeroInput" placeholder="Ingresa un Numero" min="1" max="100">
-        <button id="botonAdivinar">Adivinar</button>
+        <div class="input-boton">
+            <input type="number" id="numeroInput" placeholder="Ingresa un Numero" min="1" max="100">
+            <button id="botonAdivinar" class="adivinar">Adivinar</button>
+        </div>
 
         <p id="intentosRestantes"></p>
 
