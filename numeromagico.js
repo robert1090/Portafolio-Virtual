@@ -1,11 +1,11 @@
 let numeroSecreto;
-let intentosMaximos = 10;
+let intentosMaximos = 5;
 let intentos;
 
 function iniciarJuego() {
-    numeroSecreto = Math.floor(Math.random() * 100) + 1;
+    numeroSecreto = Math.floor(Math.random() * 30) + 1;
     intentos = 0;
-    document.getElementById("mensaje").textContent = "Tienes 10 intentos para adivinar un número entre 1 y 100.";
+    document.getElementById("mensaje").textContent = "Tienes 5 intentos para adivinar un número entre 1 y 30.";
     document.getElementById("mensaje2").textContent = "¡Buena suerte!";
     document.getElementById("intentosRestantes").textContent = `Intentos restantes: ${intentosMaximos}`;
     document.getElementById("numeroInput").disabled = false;
@@ -15,7 +15,7 @@ function iniciarJuego() {
 function verificarNumero() {
     const numeroUsuario = parseInt(document.getElementById("numeroInput").value);
 
-    if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 100) {
+    if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 30) {
         document.getElementById("mensaje").textContent = "Por favor, ingresa un número válido entre 1 y 100.";
         document.getElementById("mensaje2").textContent = "intenta de nuevo.";
         return;
